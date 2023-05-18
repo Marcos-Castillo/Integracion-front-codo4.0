@@ -8,11 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    <style>
-        .text-dot {
-            border-bottom: 2px dotted #000000;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -24,16 +20,19 @@
                     <img src="./img/codoacodo.png" alt="" class="w-75"><span>Conf Bs</span>
 
                 </a>
-                <div class="btn-group offset-1 col-8">
-                   <a href="index.html"> <button type="button" class="btn btn-dark text-secondary">La Conferencia</button></a>
+                <div class="btn-group offset-1 col-8 movileNav">
+                    <a href="index.html"> <button type="button" class="btn btn-dark text-secondary">La
+                            Conferencia</button></a>
                     <button type="button" class="btn btn-dark text-secondary">Los oradores</button>
                     <button type="button" class="btn btn-dark text-secondary">El lugar y la fecha</button>
-                    <a href="index.html#orador"><button type="button" class="btn btn-dark text-secondary">Conviertete en orador</button></a>
-                    <a href="comprar_tickets.html"><button type="button" class="btn btn-dark ">Comprar tickets</button></a>
+                    <a href="index.html#orador"><button type="button" class="btn btn-dark text-secondary">Conviertete en
+                            orador</button></a>
+                    <a href="comprar_tickets.html"><button type="button" class="btn btn-dark ">Comprar
+                            tickets</button></a>
                 </div>
             </div>
         </nav>
-       
+
         <section class="container">
 
             <div class="row g-0 justify-content-center my-4">
@@ -97,24 +96,26 @@
                         <div class="row my-3">
                             <div class="col">
                                 <label for="">Cantidad</label>
-                                <input type="number" min="0" class="form-control" placeholder="Cantidad" id="cantidad" onchange="calcularPrecio()">
+                                <input type="number" min="0" class="form-control" placeholder="Cantidad" id="cantidad"
+                                    onchange="calcularPrecio()">
                             </div>
                             <div class="col">
                                 <label for="">Categoria</label>
-                                <select name="select" class="form-control" id="tipoDescuento" onchange="calcularPrecio()">
+                                <select name="select" class="form-control" id="tipoDescuento"
+                                    onchange="calcularPrecio()">
                                     <option value="80" selected>Estudiante</option>
                                     <option value="50">Trainee</option>
                                     <option value="15">Junior</option>
-                                  </select>
+                                </select>
                             </div>
                         </div>
 
                         <div class="alert alert-primary" role="alert" id="displayPrecio">
                             Total a Pagar: $
-                          </div>
+                        </div>
 
-                        <div class="row"> 
-                            
+                        <div class="row">
+
                             <input type="reset" value="Borrar" class="btn btn-success col m-1" onclick="borrar()">
                             <button type="submit" class="btn btn-success col m-1">Resumen</button>
                         </div>
@@ -124,7 +125,7 @@
             </div>
         </section>
         <footer class="bg-dark ">
-            <div class="d-flex justify-content-center container">
+            <div class="d-flex justify-content-center container movileNav">
                 <button type="button" class="btn btn-dark text-white p-5">Preguntas frecuentes</button>
                 <button type="button" class="btn btn-dark text-white p-5">Contactanos</button>
                 <button type="button" class="btn btn-dark text-white p-5">Prensa</button>
@@ -136,12 +137,12 @@
 
             </div>
         </footer>
-    </main>
-    <script src="./js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/d82d4468f0.js" crossorigin="anonymous"></script>
+        </main>
+        <script src="./js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d82d4468f0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

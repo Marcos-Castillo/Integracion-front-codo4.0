@@ -1,0 +1,24 @@
+.text-dot {
+    border-bottom: 2px dotted #000000;
+}
+
+@media (max-width: 768px) {
+    .movileNav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movileHeader {
+
+        display: none;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .movileHeader {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: auto;
+    }
+}
